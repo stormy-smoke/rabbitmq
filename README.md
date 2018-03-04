@@ -15,4 +15,15 @@ There are no particularly high system requirements for running RabbitMQ for our 
 
 ### Deployment and Launch
 
-On the instance, run the command in [run.sh](run.sh).
+On the instance:
+
+- Create environment variables `RABBITMQ_USER` and `RABBITMQ_PASSWORD` with username and password that you want to use for RabbitMQ
+- Source the script in [run.sh](run.sh):
+
+You can do this as follows:
+
+~~~bash
+export RABBITMQ_USER=myuser
+export RABBITMQ_PASSWORD=mypassword
+curl https://raw.githubusercontent.com/stormy-smoke/rabbitmq/master/run.sh | bash
+~~~

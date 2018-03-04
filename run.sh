@@ -9,7 +9,7 @@
 # the default ports of the RabbitMQ server and the management UI, respectively.
 #------------------------------------------------------------------------------#
 
-docker run \
+echo docker run \
     -d \
     -e RABBITMQ_DEFAULT_USER="$RABBITMQ_USER" \
     -e RABBITMQ_DEFAULT_PASS="$RABBITMQ_PASSWORD" \
