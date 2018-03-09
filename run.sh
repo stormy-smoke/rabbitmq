@@ -18,4 +18,6 @@ docker run \
     -p 15672:15672 \
     -p 8443:15672 \
     -p 8080:15672 \
-    rabbitmq:3.7.3-management
+    rabbitmq:3.7.3-management &&
+
+echo "amqp://$RABBITMQ_USER:$RABBITMQ_PASSWORD@$(curl -s http://169.254.169.254/latest/meta-data/public-hostname):1723/"
