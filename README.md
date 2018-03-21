@@ -25,7 +25,7 @@ You can do this as follows:
 ~~~bash
 export RABBITMQ_USER=myuser
 export RABBITMQ_PASSWORD=mypassword
-curl -sk https://raw.githubusercontent.com/stormy-smoke/rabbitmq/master/run.sh | bash
+curl -sk https://raw.githubusercontent.com/stormysmoke/rabbitmq/master/run.sh | bash
 ~~~
 
 ## Usage
